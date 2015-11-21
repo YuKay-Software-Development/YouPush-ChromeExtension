@@ -12,7 +12,7 @@ chrome.app.runtime.onLaunched.addListener(function () {
     });
 
 });
-
+/*
 $(function () {
 
     $('#test').on('click', function (evt) {
@@ -21,13 +21,18 @@ $(function () {
             var title = "test";
             var time = /(..)(:..)/.exec(new Date());
             var hour = time[1];
-            new Notification(title + ' - ' + hour + time[2], {
+            var notif = new Notification(title + ' - ' + hour + time[2], {
                 icon: 'Logo-128x128.png',
                 body: 'Time to make the toast.'
 
             });
 
+            setTimeout(function () {
+                notif.close();
+            }, 5000);
+
     });
 
 });
 
+*/

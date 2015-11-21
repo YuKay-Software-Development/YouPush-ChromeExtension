@@ -8,15 +8,24 @@
 
     $('#test').on('click', function (evt) {
 
-        $(evt.currentTarget).text(new Date().getTime().toString());
-        var title = "test";
-        var time = /(..)(:..)/.exec(new Date());     // The prettyprinted time.
-        var hour = time[1];               // The prettyprinted hour.
-        new Notification(title + ' - ' + hour + time[2], {
-        icon: 'Logo-128x128.png',
-        body: 'Time to make the toast.'
-	  });
+        var chromeStuff = chrome.notifications;
 
+        var notifTimeout = $('[name=NotificationTimeout]').val() * 1000;
+
+        var title = "test";
+        var time = /(..)(:..)/.exec(new Date());     
+        var hour = time[1]; 
+        var message = "i liek weird pron";
+        var notif = new Notification(title + ' - ' + hour + time[2], {
+            icon: 'Logo-128x128.png',
+            body: message
+	    });
+
+        console.log(notif);
+
+        setTimeout(function () {
+            notif.close();
+        }, notifTimeout);
 
     });
 
