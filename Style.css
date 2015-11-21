@@ -1,0 +1,12 @@
+﻿html {
+    font-family: Roboto;
+}
+
+#devices {
+    min-height: 300px;
+    max-width: 100px;
+}
+
+#logo {
+    margin-bottom: 10px;
+}

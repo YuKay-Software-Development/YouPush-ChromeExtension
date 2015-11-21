@@ -1,0 +1,38 @@
+{
+  "name": "YouPush",
+
+  "description": "YouPush Notification Sync",
+
+  "version": "0.1",
+
+  "manifest_version": 2,
+
+  "browser_action": {
+    "default_icon": "Logo-128x128.png",
+    "default_popup": "popup.html"
+  },
+
+  "background": {
+
+    "page": "background.html"
+
+  },
+
+  "permissions": [
+    "notifications",
+    "background"
+  ],
+
+   "web_accessible_resources": [
+    "Logo-128x128.png"
+  ],
+
+  "content_scripts": [
+    {
+      "matches": [ "http://www.google.com/*" ],
+      "css": [ "content/bootstrap.min.css", "content/bootstrap-theme.min.css", "content/style.css" ],
+      "js": [ "Scripts/jquery-2.1.4.min.js", "Scripts/bootstrap.min.js", "Scripts/script.js" ]
+    }
+  ],
+ "icons": { "16": "Logo-16x16.png", "128": "Logo-128x128.png" }
+}
