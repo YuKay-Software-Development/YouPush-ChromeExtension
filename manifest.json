@@ -20,7 +20,8 @@
 
   "permissions": [
     "notifications",
-    "background"
+		"background",
+		"tabs"
   ],
 
    "web_accessible_resources": [

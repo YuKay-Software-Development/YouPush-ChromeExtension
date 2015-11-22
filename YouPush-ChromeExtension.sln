@@ -13,6 +13,7 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution 
 		Logo-16x16.png = Logo-16x16.png
 		Logo-32x32.png = Logo-32x32.png
 		manifest.json = manifest.json
+		MessageWindow.html = MessageWindow.html
 		popup.html = popup.html
 		Scripts\Script.js = Scripts\Script.js
 		Style.css = Style.css
